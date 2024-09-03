@@ -80,9 +80,10 @@ function validateQuantitiesBeforeSubmission() {
 }
 
 // Example of how you might hook up the validation to a submit button
-document.querySelector('a[href="#"]').addEventListener('click', (event) => {
+document.querySelector('.submit-form').addEventListener('click', (event) => {
     if (!validateQuantitiesBeforeSubmission()) {
         event.preventDefault(); // Prevent the submission if validation fails
+        // alert('All Product Quantity Should Be Greater or Equal to MOQ.');
     } else {
         // Proceed with form submission (or redirection, etc.)
         alert('Form is valid. Proceeding to submission.');

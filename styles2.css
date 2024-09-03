@@ -120,6 +120,23 @@ table td {
     background-color: #e5533a;
 }
 
+.submit-form {
+    margin-top: 10px;
+}
+
+.submit-form {
+    padding: 8px 12px;
+    margin-right: 10px;
+    background-color: #40e53a;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-form:hover {
+    background-color: #5be956;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .summary-section {
