@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <div class="cart-container">
+        <header>
+            <img src="logo.png" alt="MDB Logo" class="logo">
+            <h1>Mill Direct Blanks</h1>
+            <h2>Buy Direct & Save</h2>
+            <a href="#">CHECK OUT</a>
+        </header>
+
+        <div class="review-section">
+            <p>Please review all items before submitting for a quotation.</p>
+        </div>
+
+        <div class="summary-section">
+            <div>
+                <p>Total Quantity: <strong id="total-quantity">0 PCS</strong></p>
+            </div>
+            <div>
+                <p>Total Value: <strong id="total-value">$0.00</strong></p>
+            </div>
+        </div>
+
+        <!-- Product 1 -->
+        <div class="product" id="product1">
+            <h3>5300E Men/Unisex Heavyweight Short Sleeve Jersey Sustainable T-Shirt</h3>
+            <div style="display: flex;justify-content: space-between;">
+                <div>
+                    <p><strong>Current Color:</strong> Navy</p>
+                    <p><strong>Color Family:</strong> Dark / Premium</p>
+                </div>
+                <div style="width: 260px;height: 60px;background-color: #2b2ecd;"></div>
+                <div class="quantity-section">
+                    <p><strong>Total Quantity:</strong> <span id="product1-qty"></span></p>
+                    <p><strong>Total Value:</strong> <span id="product1-value"></span></p>
+                </div>
+            </div>
+
+            <div style="float: right;">
+                <small style="color: #da0202;">Minimum Quantity <span style="color: #f30000;font-weight: bold;">1300</span> PCS</small>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>RATE</th>
+                        <th>$5.80</th>
+                        <th>$6.00</th>
+                        <th>$6.20</th>
+                        <th>$6.40</th>
+                        <th>$6.60</th>
+                        <th>$6.80</th>
+                        <th>$7.00</th>
+                        <th>$7.20</th>
+                        <th>$7.40</th>
+                    </tr>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>XS</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>L</th>
+                        <th>XL</th>
+                        <th>XXL</th>
+                        <th>3XL</th>
+                        <th>4XL</th>
+                        <th>5XL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>QTY</td>
+                        <td><input type="number" value="120" class="quantity" data-rate="5.80"></td>
+                        <td><input type="number" value="140" class="quantity" data-rate="6.00"></td>
+                        <td><input type="number" value="280" class="quantity" data-rate="6.20"></td>
+                        <td><input type="number" value="280" class="quantity" data-rate="6.40"></td>
+                        <td><input type="number" value="280" class="quantity" data-rate="6.60"></td>
+                        <td><input type="number" value="80" class="quantity" data-rate="6.80"></td>
+                        <td><input type="number" value="490" class="quantity" data-rate="7.00"></td>
+                        <td><input type="number" value="0" class="quantity" data-rate="7.20"></td>
+                        <td><input type="number" value="0" class="quantity" data-rate="7.40"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>PROJECTED AMOUNT</strong></td>
+                        <td class="amount">$696</td>
+                        <td class="amount">$840</td>
+                        <td class="amount">$1,736</td>
+                        <td class="amount">$1,792</td>
+                        <td class="amount">$1,848</td>
+                        <td class="amount">$544</td>
+                        <td class="amount">$3,430</td>
+                        <td class="amount">$0</td>
+                        <td class="amount">$0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <div class="actions">
+                <button style="width: 100%;">Remove</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product" id="product2">
+            <h3>6100E Women’s Lightweight V-Neck Sustainable T-Shirt</h3>
+            <div style="display: flex;justify-content: space-between;">
+                <div>
+                    <p><strong>Current Color:</strong> Black</p>
+                    <p><strong>Color Family:</strong> Dark / Basic</p>
+                </div>
+                <div style="width: 260px;height: 60px;background-color: #000000;"></div>
+                <div class="quantity-section">
+                    <p><strong>Total Quantity:</strong> <span id="product2-qty"></span></p>
+                    <p><strong>Total Value:</strong> <span id="product2-value"></span></p>
+                </div>
+            </div>
+
+            <div style="float: right;">
+                <small style="color: #da0202;">Minimum Quantity <span style="color: #f30000;font-weight: bold;">2200</span> PCS</small>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>RATE</th>
+                        <th>$5.50</th>
+                        <th>$5.70</th>
+                        <th>$5.90</th>
+                        <th>$6.10</th>
+                        <th>$6.30</th>
+                        <th>$6.50</th>
+                        <th>$6.70</th>
+                        <th>$6.90</th>
+                        <th>$7.10</th>
+                    </tr>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>XS</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>L</th>
+                        <th>XL</th>
+                        <th>XXL</th>
+                        <th>3XL</th>
+                        <th>4XL</th>
+                        <th>5XL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>QTY</td>
+                        <td><input type="number" value="100" class="quantity" data-rate="5.50"></td>
+                        <td><input type="number" value="120" class="quantity" data-rate="5.70"></td>
+                        <td><input type="number" value="150" class="quantity" data-rate="5.90"></td>
+                        <td><input type="number" value="170" class="quantity" data-rate="6.10"></td>
+                        <td><input type="number" value="200" class="quantity" data-rate="6.30"></td>
+                        <td><input type="number" value="220" class="quantity" data-rate="6.50"></td>
+                        <td><input type="number" value="240" class="quantity" data-rate="6.70"></td>
+                        <td><input type="number" value="260" class="quantity" data-rate="6.90"></td>
+                        <td><input type="number" value="280" class="quantity" data-rate="7.10"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>PROJECTED AMOUNT</strong></td>
+                        <td class="amount">$550</td>
+                        <td class="amount">$684</td>
+                        <td class="amount">$885</td>
+                        <td class="amount">$1,037</td>
+                        <td class="amount">$1,260</td>
+                        <td class="amount">$1,430</td>
+                        <td class="amount">$1,608</td>
+                        <td class="amount">$1,794</td>
+                        <td class="amount">$1,988</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <div class="actions">
+                <button style="width: 100%;">Remove</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product" id="product3">
+            <h3>7100E Kid's Soft Cotton Long Sleeve Jersey T-Shirt</h3>
+            <div style="display: flex;justify-content: space-between;">
+                <div>
+                    <p><strong>Current Color:</strong> Grey</p>
+                    <p><strong>Color Family:</strong> Light / Basic</p>
+                </div>
+                <div style="width: 260px;height: 60px;background-color: #7c7c80;"></div>
+                <div class="quantity-section">
+                    <p><strong>Total Quantity:</strong> <span id="product3-qty"></span></p>
+                    <p><strong>Total Value:</strong> <span id="product3-value"></span></p>
+                </div>
+            </div>
+
+            <div style="float: right;">
+                <small style="color: #da0202;">Minimum Quantity <span style="color: #f30000;font-weight: bold;">3300</span> PCS</small>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>RATE</th>
+                        <th>$4.50</th>
+                        <th>$4.70</th>
+                        <th>$4.90</th>
+                        <th>$5.10</th>
+                        <th>$5.30</th>
+                        <th>$5.50</th>
+                        <th>$5.70</th>
+                        <th>$5.90</th>
+                        <th>$6.10</th>
+                    </tr>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>XS</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>L</th>
+                        <th>XL</th>
+                        <th>XXL</th>
+                        <th>3XL</th>
+                        <th>4XL</th>
+                        <th>5XL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>QTY</td>
+                        <td><input type="number" value="50" class="quantity" data-rate="4.50"></td>
+                        <td><input type="number" value="60" class="quantity" data-rate="4.70"></td>
+                        <td><input type="number" value="70" class="quantity" data-rate="4.90"></td>
+                        <td><input type="number" value="80" class="quantity" data-rate="5.10"></td>
+                        <td><input type="number" value="90" class="quantity" data-rate="5.30"></td>
+                        <td><input type="number" value="100" class="quantity" data-rate="5.50"></td>
+                        <td><input type="number" value="110" class="quantity" data-rate="5.70"></td>
+                        <td><input type="number" value="120" class="quantity" data-rate="5.90"></td>
+                        <td><input type="number" value="130" class="quantity" data-rate="6.10"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>PROJECTED AMOUNT</strong></td>
+                        <td class="amount">$225</td>
+                        <td class="amount">$282</td>
+                        <td class="amount">$343</td>
+                        <td class="amount">$408</td>
+                        <td class="amount">$477</td>
+                        <td class="amount">$550</td>
+                        <td class="amount">$627</td>
+                        <td class="amount">$708</td>
+                        <td class="amount">$793</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <div class="actions">
+                <button style="width: 100%;">Remove</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts2.js"></script>
+</body>
+
+</html>
